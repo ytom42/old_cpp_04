@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 09:30:43 by ytomiyos          #+#    #+#             */
-/*   Updated: 2021/11/16 12:19:03 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/11/17 21:29:31 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ Dog &Dog::operator=(Dog const &copy)
 Animal &Dog::operator=(const Animal &copy)
 {
 	std::cout << "Dog Copy Assignment Called" << std::endl;
-	_type = getType();
+	_type = copy.getType();
 	*(this->brain) = *(copy.getBrain());
 	return (*this);
 }
