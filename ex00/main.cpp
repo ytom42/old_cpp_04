@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 09:18:11 by ytomiyos          #+#    #+#             */
-/*   Updated: 2021/11/16 10:51:38 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/11/16 14:18:16 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,16 @@
 
 int main()
 {
-	const Animal* meta = new Animal();
+	const Animal* animal = new Animal();
 	const Animal* dog = new Dog();
 	const Animal* cat = new Cat();
-	std::cout << meta->getType() << std::endl;
+	std::cout << animal->getType() << std::endl;
 	std::cout << dog->getType() << std::endl;
 	std::cout << cat->getType() << std::endl;
-	meta->makeSound();
+	animal->makeSound();
 	dog->makeSound();
 	cat->makeSound();
-	delete meta;
+	delete animal;
 	delete dog;
 	delete cat;
 
