@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 09:18:11 by ytomiyos          #+#    #+#             */
-/*   Updated: 2021/11/16 12:21:35 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/11/17 21:27:51 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,20 @@ int main()
 		brain->ideas[3] = "poyo";
 	}
 	
+	std::cout << animals[2]->getType() << std::endl;
+	std::cout << animals[2]->getBrain()->ideas[0] << std::endl;
+	std::cout << animals[2]->getBrain()->ideas[1] << std::endl;
+	std::cout << animals[2]->getBrain()->ideas[2] << std::endl;
 	std::cout << animals[2]->getBrain()->ideas[3] << std::endl;
 
 	brain = animals[1]->getBrain();
 	brain->ideas[3] = "42";
 	*(animals[2]) = *(animals[1]);
 	
+	std::cout << animals[2]->getType() << std::endl;
+	std::cout << animals[2]->getBrain()->ideas[0] << std::endl;
+	std::cout << animals[2]->getBrain()->ideas[1] << std::endl;
+	std::cout << animals[2]->getBrain()->ideas[2] << std::endl;
 	std::cout << animals[2]->getBrain()->ideas[3] << std::endl;
 
 	for (int i = 0; i < 10; i++)

@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 09:30:41 by ytomiyos          #+#    #+#             */
-/*   Updated: 2021/11/16 12:19:15 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/11/17 21:17:50 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ Cat &Cat::operator=(Cat const &copy)
 Animal &Cat::operator=(const Animal &copy)
 {
 	std::cout << "Cat Copy Assignment Called" << std::endl;
-	_type = getType();
+	_type = copy.getType();
 	*(this->brain) = *(copy.getBrain());
 	return (*this);
 }
