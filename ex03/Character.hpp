@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 17:40:48 by ytomiyos          #+#    #+#             */
-/*   Updated: 2021/11/16 21:18:07 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/11/17 22:35:04 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class Character : public ICharacter
 		int _number_equipped;
 	public:
 		Character(std::string const &name);
+		~Character(void);
 		std::string const & getName() const;
 		void equip(AMateria* m);
 		void unequip(int idx);
